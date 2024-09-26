@@ -1,0 +1,10 @@
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\bin\Debug\Cliente_Eventos.exe.config
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\bin\Debug\Cliente_Eventos.exe
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\bin\Debug\Cliente_Eventos.pdb
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.csproj.AssemblyReference.cache
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.FramePrincipal.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Properties.Resources.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.csproj.GenerateResource.cache
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.csproj.CoreCompileInputs.cache
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.exe
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.pdb

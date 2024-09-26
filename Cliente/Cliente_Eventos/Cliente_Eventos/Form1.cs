@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cliente_Eventos
 {
-    public partial class Form1 : Form
+    public partial class FramePrincipal : Form
     {
-        public Form1()
+        public FramePrincipal()
         {
             InitializeComponent();
         }
