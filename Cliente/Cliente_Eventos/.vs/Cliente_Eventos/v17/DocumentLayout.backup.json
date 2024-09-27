@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Properties\\Resources.resx",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Properties\\Resources.resx",
+              "RelativeToolTip": "Cliente_Eventos\\Properties\\Resources.resx",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwHcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-09-27T05:33:51.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FramePrincipal.cs",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvw8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T04:32:40.205Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Form1.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Form1.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Form1.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Cliente_Eventos\\Form1.cs [Dise\u00F1o]*",
+              "Title": "FramePrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T21:20:11.862Z",
               "EditorCaption": " [Dise\u00F1o]"
