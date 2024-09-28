@@ -18,13 +18,14 @@ public class ControladorEvento {
     private ServicioEvento servicioEvento;
 
     @PostMapping("/add")
-    public ResponseEntity<?> adicionarConcierto(@RequestBody Concierto concierto) {
+    public ResponseEntity<Evento> adicionarConcierto(@RequestBody Concierto concierto) {
         try {
             Evento evento = servicioEvento.adicionarConcierto(concierto);
-            return ResponseEntity.status(HttpStatus.CREATED).body(evento);
+
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.badRequest().build();
         }
+        return ResponseEntity.status(HttpStatus.CREATED).body(concierto);
     }
 
     @GetMapping("/buscar/id/{id}")
