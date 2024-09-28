@@ -8,3 +8,10 @@ F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Clien
 F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.csproj.CoreCompileInputs.cache
 F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.exe
 F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.pdb
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.AgregarConcierto.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.EliminarConcierto.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.ActualizarConcierto.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.BuscarPorId.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.BuscarPorNombre.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.AcercaDe.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.ListarConciertos.resources

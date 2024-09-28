@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cliente_Eventos.Cliente.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,12 +35,61 @@ namespace Cliente_Eventos
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+  
 
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void agregarConciertoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarConcierto agregarConcierto = new AgregarConcierto();
+            agregarConcierto.Show();
+        }
+
+        private void eliminarConciertoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarConcierto eliminarConcierto = new EliminarConcierto();
+            eliminarConcierto.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void actualizarConciertoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarConcierto actualizarConcierto = new ActualizarConcierto();
+            actualizarConcierto.Show();
+        }
+
+        private void buscarPorIDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarPorId buscarPorID = new BuscarPorId();
+            buscarPorID.Show();
+
+        }
+
+        private void buscarPorNombreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarPorNombre buscarPorNombre = new BuscarPorNombre();
+            buscarPorNombre.Show();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcercaDe acercaDe = new AcercaDe();
+            acercaDe.Show();
+        }
+
+        private void listarConciertosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarConciertos listarConciertos = new ListarConciertos();
+            listarConciertos.Show();
         }
     }
 }

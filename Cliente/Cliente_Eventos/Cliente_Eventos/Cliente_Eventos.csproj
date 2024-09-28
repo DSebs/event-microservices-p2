@@ -46,6 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.Vista\AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\AgregarConcierto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\AgregarConcierto.Designer.cs">
+      <DependentUpon>AgregarConcierto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorId.Designer.cs">
+      <DependentUpon>BuscarPorId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorNombre.Designer.cs">
+      <DependentUpon>BuscarPorNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\EliminarConcierto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\EliminarConcierto.Designer.cs">
+      <DependentUpon>EliminarConcierto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\ActualizarConcierto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\ActualizarConcierto.Designer.cs">
+      <DependentUpon>ActualizarConcierto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.Vista\FramePrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,9 +89,36 @@
       <DependentUpon>FramePrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.Modelo\Program.cs" />
+    <Compile Include="Cliente.Vista\ListarConciertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\ListarConciertos.Designer.cs">
+      <DependentUpon>ListarConciertos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cliente.Vista\AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\AgregarConcierto.resx">
+      <DependentUpon>AgregarConcierto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\BuscarPorId.resx">
+      <DependentUpon>BuscarPorId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\BuscarPorNombre.resx">
+      <DependentUpon>BuscarPorNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\EliminarConcierto.resx">
+      <DependentUpon>EliminarConcierto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\ActualizarConcierto.resx">
+      <DependentUpon>ActualizarConcierto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\FramePrincipal.resx">
       <DependentUpon>FramePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\ListarConciertos.resx">
+      <DependentUpon>ListarConciertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
