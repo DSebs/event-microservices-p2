@@ -1,0 +1,10 @@
+# Ignorar la carpeta .vs generada por Visual Studio
+.vs/
+
+# Ignorar otras configuraciones locales
+*.user
+*.suo
+*.csproj.user
+*.dbmdl
+*.jfm
+*.ipch
