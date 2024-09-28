@@ -1,16 +1,14 @@
 package com.lausebscode.modelo;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 @Data
-@RequiredArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class Concierto extends Evento{
-
+@SuperBuilder
+public class Concierto extends Evento {
     private String artista;
-
 }
