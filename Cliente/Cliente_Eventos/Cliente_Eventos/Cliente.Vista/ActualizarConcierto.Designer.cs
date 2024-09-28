@@ -31,7 +31,7 @@
             this.txtBuscarID = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panelAgregar = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtArtista = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -67,12 +67,13 @@
             this.btnBuscar.TabIndex = 14;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // panelAgregar
             // 
             this.panelAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.panelAgregar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelAgregar.Controls.Add(this.dateTimePicker1);
+            this.panelAgregar.Controls.Add(this.dtpFecha);
             this.panelAgregar.Controls.Add(this.txtArtista);
             this.panelAgregar.Controls.Add(this.txtPrecio);
             this.panelAgregar.Controls.Add(this.txtNombre);
@@ -88,13 +89,13 @@
             this.panelAgregar.Size = new System.Drawing.Size(331, 335);
             this.panelAgregar.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(113, 197);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dtpFecha.Enabled = false;
+            this.dtpFecha.Location = new System.Drawing.Point(113, 197);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(202, 20);
+            this.dtpFecha.TabIndex = 12;
             // 
             // txtArtista
             // 
@@ -139,6 +140,7 @@
             this.btnActualizar.TabIndex = 5;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // lblArtista
             // 
@@ -244,6 +246,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblPrincipal;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
     }
 }

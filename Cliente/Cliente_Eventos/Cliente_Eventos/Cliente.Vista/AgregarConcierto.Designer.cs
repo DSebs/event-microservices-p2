@@ -30,7 +30,7 @@
         {
             this.lblPrincipal = new System.Windows.Forms.Label();
             this.panelAgregar = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtArtista = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -60,7 +60,7 @@
             // 
             this.panelAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.panelAgregar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelAgregar.Controls.Add(this.dateTimePicker1);
+            this.panelAgregar.Controls.Add(this.dtpFecha);
             this.panelAgregar.Controls.Add(this.txtArtista);
             this.panelAgregar.Controls.Add(this.txtPrecio);
             this.panelAgregar.Controls.Add(this.txtNombre);
@@ -76,12 +76,12 @@
             this.panelAgregar.Size = new System.Drawing.Size(331, 364);
             this.panelAgregar.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(113, 196);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dtpFecha.Location = new System.Drawing.Point(113, 196);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(202, 20);
+            this.dtpFecha.TabIndex = 11;
             // 
             // txtArtista
             // 
@@ -122,6 +122,7 @@
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblArtista
             // 
@@ -208,7 +209,7 @@
         private System.Windows.Forms.Label lblArtista;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.TextBox txtArtista;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtNombre;

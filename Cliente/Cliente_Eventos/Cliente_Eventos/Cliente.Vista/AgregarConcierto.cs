@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cliente_Eventos.Cliente.Servicio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,12 @@ namespace Cliente_Eventos.Cliente.Vista
 {
     public partial class AgregarConcierto : Form
     {
-        public AgregarConcierto()
+        private ServicioConcierto servicioConcierto;
+        public AgregarConcierto(ServicioConcierto servicioConcierto)
         {
             InitializeComponent();
-        }
+            this.servicioConcierto = servicioConcierto;
+        }       
 
         private void lblPrincipal_Click(object sender, EventArgs e)
         {
@@ -30,6 +33,24 @@ namespace Cliente_Eventos.Cliente.Vista
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(txtID.Text);
+                string nombre = txtNombre.Text;
+                double precio = Convert.ToDouble(txtPrecio.Text);
+                DateTime fecha = dtpFecha.Value;
+                string artista = txtArtista.Text;
+
+                servicioConcierto.AgregarConcierto(id, nombre, precio, fecha, artista);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

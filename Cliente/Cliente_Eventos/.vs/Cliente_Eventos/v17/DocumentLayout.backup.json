@@ -3,27 +3,19 @@
   "WorkspaceRootPath": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\buscarpornombre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\buscarpornombre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\buscarpornombre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\buscarpornombre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\listarconciertos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\listarconciertos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\listarconciertos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\listarconciertos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.servicio\\servicioconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.servicio\\servicioconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,70 +34,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ListarConciertos.cs",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ServicioConcierto.cs",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T03:33:41.913Z",
+              "WhenOpened": "2024-09-28T17:22:40.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListarConciertos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ListarConciertos.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "ActualizarConcierto.cs",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T03:32:57.942Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-28T17:22:25.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BuscarPorNombre.cs",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T03:32:02.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BuscarPorNombre.cs [Dise\u00F1o]",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\BuscarPorNombre.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T03:31:45.461Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "FramePrincipal.cs",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAUwFsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T21:29:17.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "FramePrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",

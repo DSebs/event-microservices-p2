@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cliente_Eventos.Cliente.Modelo;
+using Cliente_Eventos.Cliente.Servicio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,11 @@ namespace Cliente_Eventos.Cliente.Vista
 {
     public partial class BuscarPorNombre : Form
     {
-        public BuscarPorNombre()
+        private ServicioConcierto servicioConcierto;
+        public BuscarPorNombre(ServicioConcierto servicioConcierto)
         {
             InitializeComponent();
+            this.servicioConcierto = servicioConcierto;
         }
 
         private void txtBuscarNombre_Enter(object sender, EventArgs e)
@@ -26,5 +30,23 @@ namespace Cliente_Eventos.Cliente.Vista
             }
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string nombreABuscar = (txtBuscarNombre.Text);
+                Concierto concierto = servicioConcierto.BuscarConciertoPorNomrbe(nombreABuscar);
+                txtID.Text = concierto.id.ToString();
+                txtNombre.Text = concierto.nombre;
+                txtPrecio.Text = concierto.precio.ToString();
+                txtFecha.Text = concierto.fecha.ToString();
+                txtArtista.Text = concierto.artista;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

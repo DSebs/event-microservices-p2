@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cliente_Eventos.Cliente.Modelo;
+using Cliente_Eventos.Cliente.Servicio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,11 @@ namespace Cliente_Eventos.Cliente.Vista
 {
     public partial class ActualizarConcierto : Form
     {
-        public ActualizarConcierto()
+        private ServicioConcierto servicioConcierto;
+        public ActualizarConcierto(ServicioConcierto servicioConcierto)
         {
             InitializeComponent();
+            this.servicioConcierto = servicioConcierto;
         }
 
         private void lblPrincipal_Click(object sender, EventArgs e)
@@ -31,5 +35,49 @@ namespace Cliente_Eventos.Cliente.Vista
             }
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(txtBuscarID.Text);
+                Concierto concierto = servicioConcierto.BuscarConciertoPorId(id);
+                txtID.Text = concierto.id.ToString();
+                txtNombre.Text = concierto.nombre;
+                txtPrecio.Text = concierto.precio.ToString();
+                dtpFecha.Value = concierto.fecha;
+                txtArtista.Text = concierto.artista;
+
+                txtID.Enabled = true;
+                txtNombre.Enabled = true;
+                txtPrecio.Enabled = true;
+                txtArtista.Enabled = true;
+                dtpFecha.Enabled = true;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int idABuscar = Convert.ToInt32(txtBuscarID.Text);
+                int id = Convert.ToInt32(txtID.Text);
+                string nombre = txtNombre.Text;
+                double precio = Convert.ToDouble(txtPrecio.Text);
+                DateTime fecha = dtpFecha.Value;
+                string artista = txtArtista.Text;
+
+                servicioConcierto.ActualizarConcierto(idABuscar,id,nombre,precio,fecha,artista);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

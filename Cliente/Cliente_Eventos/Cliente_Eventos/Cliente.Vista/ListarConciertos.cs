@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cliente_Eventos.Cliente.Modelo;
+using Cliente_Eventos.Cliente.Servicio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,11 @@ namespace Cliente_Eventos.Cliente.Vista
 {
     public partial class ListarConciertos : Form
     {
-        public ListarConciertos()
+        private ServicioConcierto servicioConcierto;
+        public ListarConciertos(ServicioConcierto servicioConcierto)
         {
             InitializeComponent();
+            this.servicioConcierto = servicioConcierto;
         }
 
         private void lblPrincipal_Click(object sender, EventArgs e)
@@ -36,5 +40,31 @@ namespace Cliente_Eventos.Cliente.Vista
             }
         }
 
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Concierto> listaConciertos = servicioConcierto.ListarConciertos();
+                tblConciertos.DataSource = listaConciertos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnListarXPrecio_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double precioMin = Convert.ToDouble(txtPrecioFiltro.Text);
+                List<Concierto> listaConciertos = servicioConcierto.ListarConciertosMin(precioMin);
+                tblConciertos.DataSource = listaConciertos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

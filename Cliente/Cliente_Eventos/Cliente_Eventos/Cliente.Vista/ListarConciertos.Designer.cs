@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblPrincipal = new System.Windows.Forms.Label();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
             this.tblConciertos = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,17 +56,18 @@
             this.lblPrincipal.Text = "Listar Conciertos";
             this.lblPrincipal.Click += new System.EventHandler(this.lblPrincipal_Click);
             // 
-            // btnActualizar
+            // btnListar
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
-            this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizar.Location = new System.Drawing.Point(65, 358);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(96, 34);
-            this.btnActualizar.TabIndex = 14;
-            this.btnActualizar.Text = "Listar";
-            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.btnListar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnListar.Location = new System.Drawing.Point(65, 358);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(96, 34);
+            this.btnListar.TabIndex = 14;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // tblConciertos
             // 
@@ -136,6 +137,7 @@
             this.btnListarXPrecio.TabIndex = 17;
             this.btnListarXPrecio.Text = "Filtrar";
             this.btnListarXPrecio.UseVisualStyleBackColor = false;
+            this.btnListarXPrecio.Click += new System.EventHandler(this.btnListarXPrecio_Click);
             // 
             // txtPrecioFiltro
             // 
@@ -167,7 +169,7 @@
             this.ClientSize = new System.Drawing.Size(581, 427);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tblConciertos);
-            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.lblPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListarConciertos";
@@ -184,7 +186,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblPrincipal;
-        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView tblConciertos;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;

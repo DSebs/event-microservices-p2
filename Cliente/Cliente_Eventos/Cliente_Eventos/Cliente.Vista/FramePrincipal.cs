@@ -1,4 +1,5 @@
 ﻿using Cliente_Eventos.Cliente.Vista;
+using Cliente_Eventos.Cliente.Servicio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +9,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RestSharp;
 
 namespace Cliente_Eventos
 {
     public partial class FramePrincipal : Form
     {
+        private ServicioConcierto servicioConcierto;
+        private RestClientOptions options;
+        private RestClient client;
         public FramePrincipal()
         {
             InitializeComponent();
+            options = new RestClientOptions("http://localhost:8090/evento/concierto");
+            client = new RestClient(options);
+            servicioConcierto = new ServicioConcierto(client);
+
         }
 
         private void buscaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,13 +55,13 @@ namespace Cliente_Eventos
 
         private void agregarConciertoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AgregarConcierto agregarConcierto = new AgregarConcierto();
+            AgregarConcierto agregarConcierto = new AgregarConcierto(servicioConcierto);
             agregarConcierto.Show();
         }
 
         private void eliminarConciertoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EliminarConcierto eliminarConcierto = new EliminarConcierto();
+            EliminarConcierto eliminarConcierto = new EliminarConcierto(servicioConcierto);
             eliminarConcierto.Show();
         }
 
@@ -63,20 +72,20 @@ namespace Cliente_Eventos
 
         private void actualizarConciertoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ActualizarConcierto actualizarConcierto = new ActualizarConcierto();
+            ActualizarConcierto actualizarConcierto = new ActualizarConcierto(servicioConcierto);
             actualizarConcierto.Show();
         }
 
         private void buscarPorIDToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BuscarPorId buscarPorID = new BuscarPorId();
+            BuscarPorId buscarPorID = new BuscarPorId(servicioConcierto);
             buscarPorID.Show();
 
         }
 
         private void buscarPorNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BuscarPorNombre buscarPorNombre = new BuscarPorNombre();
+            BuscarPorNombre buscarPorNombre = new BuscarPorNombre(servicioConcierto);
             buscarPorNombre.Show();
         }
 
@@ -88,7 +97,7 @@ namespace Cliente_Eventos
 
         private void listarConciertosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListarConciertos listarConciertos = new ListarConciertos();
+            ListarConciertos listarConciertos = new ListarConciertos(servicioConcierto);
             listarConciertos.Show();
         }
     }
