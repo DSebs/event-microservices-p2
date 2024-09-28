@@ -47,7 +47,6 @@ namespace Cliente_Eventos.Cliente.Vista
                 dtpFecha.Value = concierto.fecha;
                 txtArtista.Text = concierto.artista;
 
-                txtID.Enabled = true;
                 txtNombre.Enabled = true;
                 txtPrecio.Enabled = true;
                 txtArtista.Enabled = true;

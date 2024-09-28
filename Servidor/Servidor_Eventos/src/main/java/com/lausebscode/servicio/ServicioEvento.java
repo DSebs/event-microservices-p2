@@ -68,7 +68,7 @@ public class ServicioEvento {
             throw new IllegalArgumentException("El precio mínimo no puede ser negativo");
         }
         return eventos.stream()
-                .filter(evento -> evento.getPrecio() > precioMin)
+                .filter(evento -> evento.getPrecio() >= precioMin)
                 .map(evento -> (Concierto) evento)
                 .collect(Collectors.toList());
     }

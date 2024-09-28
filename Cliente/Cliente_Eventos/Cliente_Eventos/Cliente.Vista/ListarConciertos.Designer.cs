@@ -31,11 +31,6 @@
             this.lblPrincipal = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
             this.tblConciertos = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Artista = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnListarXPrecio = new System.Windows.Forms.Button();
             this.txtPrecioFiltro = new System.Windows.Forms.TextBox();
@@ -73,47 +68,11 @@
             // 
             this.tblConciertos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.tblConciertos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblConciertos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Nombre,
-            this.Precio,
-            this.Fecha,
-            this.Artista});
             this.tblConciertos.Location = new System.Drawing.Point(23, 128);
             this.tblConciertos.Name = "tblConciertos";
             this.tblConciertos.Size = new System.Drawing.Size(538, 190);
             this.tblConciertos.TabIndex = 15;
             this.tblConciertos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            // 
-            // Artista
-            // 
-            this.Artista.HeaderText = "Artista";
-            this.Artista.Name = "Artista";
-            this.Artista.ReadOnly = true;
             // 
             // panel1
             // 
@@ -188,11 +147,6 @@
         private System.Windows.Forms.Label lblPrincipal;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView tblConciertos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Artista;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblSecundario;
         private System.Windows.Forms.Button btnListarXPrecio;

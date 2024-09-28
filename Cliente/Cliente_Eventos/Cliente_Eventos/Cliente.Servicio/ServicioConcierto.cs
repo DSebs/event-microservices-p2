@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Cliente_Eventos.Cliente.Servicio
 {
@@ -30,10 +31,13 @@ namespace Cliente_Eventos.Cliente.Servicio
             request.AddStringBody(jsonBody, DataFormat.Json);
 
             var response = _client.Execute(request);
-
             if (!response.IsSuccessful)
             {
                 throw new Exception($"Error al agregar concierto: {response.ErrorMessage}");
+            }
+            else
+            {
+                MessageBox.Show("Concierto creado exitosamente");
             }
         }
 
@@ -83,9 +87,13 @@ namespace Cliente_Eventos.Cliente.Servicio
             {
                 throw new Exception($"Error al actualizar concierto: {response.ErrorMessage}");
             }
+            else
+            {
+                MessageBox.Show("Concierto actualizado con exito");
+            }
         }
 
-        // Asegurar validacion por si el buscar falla
+        
         public void EliminarConcierto(int id)
         {
             Concierto concierto = BuscarConciertoPorId(id);
@@ -100,6 +108,10 @@ namespace Cliente_Eventos.Cliente.Servicio
             if (!response.IsSuccessful)
             {
                 throw new Exception($"Error al eliminar concierto: {response.ErrorMessage}");
+            }
+            else
+            {
+                MessageBox.Show("Concierto eliminado exitosamente");
             }
         }
 
