@@ -75,6 +75,7 @@ public class ServicioEvento {
 
     public Concierto actualizarConcierto(int id, Concierto nuevoConcierto) {
         validarConcierto(nuevoConcierto);
+        validarUnicidadNombre(nuevoConcierto);
         Concierto conciertoExistente = (Concierto) eventos.stream()
                 .filter(c -> c.getId() == id)
                 .findFirst()
@@ -111,6 +112,12 @@ public class ServicioEvento {
         if (eventos.stream().anyMatch(e -> e.getId() == concierto.getId())) {
             throw new IllegalArgumentException("Ya existe un evento con el ID: " + concierto.getId());
         }
+        if (eventos.stream().anyMatch(e -> e.getNombre().equalsIgnoreCase(concierto.getNombre()))) {
+            throw new IllegalArgumentException("Ya existe un evento con el nombre: " + concierto.getNombre());
+        }
+    }
+
+    private void validarUnicidadNombre(Concierto concierto){
         if (eventos.stream().anyMatch(e -> e.getNombre().equalsIgnoreCase(concierto.getNombre()))) {
             throw new IllegalArgumentException("Ya existe un evento con el nombre: " + concierto.getNombre());
         }
