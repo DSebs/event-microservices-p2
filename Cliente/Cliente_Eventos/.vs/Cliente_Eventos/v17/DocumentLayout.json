@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.servicio\\servicioconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.servicio\\servicioconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -64,25 +64,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ServicioConcierto.cs",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Servicio\\ServicioConcierto.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFAAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T17:22:40.829Z"
+              "WhenOpened": "2024-09-28T17:22:40.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ActualizarConcierto.cs",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwEIAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T17:22:25.812Z",
               "EditorCaption": ""

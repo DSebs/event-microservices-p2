@@ -74,12 +74,18 @@ public class ServicioEvento {
     }
 
     public Concierto actualizarConcierto(int id, Concierto nuevoConcierto) {
+
+        // Validaciones para evitar duplicidad de atributos clave
         validarConcierto(nuevoConcierto);
-        validarUnicidadNombre(nuevoConcierto);
+
         Concierto conciertoExistente = (Concierto) eventos.stream()
                 .filter(c -> c.getId() == id)
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Concierto no encontrado con ID: " + id));
+
+        if (!conciertoExistente.getNombre().equalsIgnoreCase(nuevoConcierto.getNombre())) {
+            validarUnicidadNombre(nuevoConcierto);
+        }
 
         conciertoExistente.setNombre(nuevoConcierto.getNombre());
         conciertoExistente.setFecha(nuevoConcierto.getFecha());
