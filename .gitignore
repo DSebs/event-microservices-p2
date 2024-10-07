@@ -1,10 +1,78 @@
-# Ignorar la carpeta .vs generada por Visual Studio
+# Visual Studio
 .vs/
-
-# Ignorar otras configuraciones locales
 *.user
 *.suo
-*.csproj.user
-*.dbmdl
-*.jfm
-*.ipch
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+*.nupkg
+# NuGet Packages Folder
+packages/
+# NuGet v3's project.json files produces more ignoreable files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# JetBrains Rider
+.idea/
+
+# Rider settings
+.idea/
+.idea_modules/
+
+# Database
+*.mdf
+*.ldf
+*.ndf
+
+# IIS
+iisexpress/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# MacOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+*.log
+*.bak
+*.swp
+
+# Resharper
+_ReSharper*/
