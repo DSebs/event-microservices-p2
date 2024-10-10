@@ -50,12 +50,13 @@ public class ServicioEvento {
                 .orElseThrow(() -> new IllegalArgumentException("No se encontró el concierto con nombre: " + nombre));
     }
 
-    public void eliminarConcierto(Concierto concierto){
-        if (concierto == null) {
-            throw new IllegalArgumentException("El concierto a eliminar no puede ser null");
-        }
-        if (!eventos.remove(concierto)) {
-            throw new IllegalArgumentException("No se encontró el concierto a eliminar");
+    public void eliminarConcierto(int id) {
+        try {
+            Concierto concierto = (Concierto) buscarConciertoId(id);
+            eventos.remove(concierto);
+
+        } catch (Exception e) {
+            System.err.println("Error inesperado al eliminar el concierto: " + e.getMessage());
         }
     }
 
@@ -91,6 +92,8 @@ public class ServicioEvento {
         conciertoExistente.setFecha(nuevoConcierto.getFecha());
         conciertoExistente.setPrecio(nuevoConcierto.getPrecio());
         conciertoExistente.setArtista(nuevoConcierto.getArtista());
+        conciertoExistente.setCanciones(nuevoConcierto.getCanciones());
+
 
         return conciertoExistente;
     }
