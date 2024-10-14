@@ -20,12 +20,12 @@ namespace Cliente_Eventos.Cliente.Servicio
             _client = client;
         }
 
-        public void AgregarConcierto(int id, string nombre, double precio, DateTime fecha, string artista)
+        public void AgregarConcierto(int id, string nombre, double precio, DateTime fecha, string artista, List<int> cancionesIds)
         {
-            Concierto concierto = new Concierto(id, nombre, precio, fecha, artista);
+            Concierto concierto = new Concierto(id, nombre, precio, fecha, artista, cancionesIds);
             var jsonBody = JsonConvert.SerializeObject(concierto);
 
-            var request = new RestRequest("/add", Method.Post);
+            var request = new RestRequest("/evento/concierto/add", Method.Post);
 
             request.AddHeader("Content-Type", "application/json");
             request.AddStringBody(jsonBody, DataFormat.Json);
@@ -40,6 +40,7 @@ namespace Cliente_Eventos.Cliente.Servicio
                 MessageBox.Show("Concierto creado exitosamente");
             }
         }
+
 
         public Concierto BuscarConciertoPorId(int id)
         {
@@ -71,12 +72,12 @@ namespace Cliente_Eventos.Cliente.Servicio
             }
         }
 
-        public void ActualizarConcierto(int idConciertoExistente, int id, string nombre, double precio, DateTime fecha, string artista)
+        public void ActualizarConcierto(int idConciertoExistente, int id, string nombre, double precio, DateTime fecha, string artista, List<int> cancionesIds)
         {
-            Concierto concierto = new Concierto(id, nombre, precio, fecha, artista);
+            Concierto concierto = new Concierto(id, nombre, precio, fecha, artista, cancionesIds);
             var jsonBody = JsonConvert.SerializeObject(concierto);
 
-            var request = new RestRequest($"/{idConciertoExistente}", Method.Put);
+            var request = new RestRequest($"/evento/concierto/{idConciertoExistente}", Method.Put);
 
             request.AddHeader("Content-Type", "application/json");
             request.AddStringBody(jsonBody, DataFormat.Json);
@@ -89,20 +90,15 @@ namespace Cliente_Eventos.Cliente.Servicio
             }
             else
             {
-                MessageBox.Show("Concierto actualizado con exito");
+                MessageBox.Show("Concierto actualizado con éxito");
             }
         }
 
-        
+
+
         public void EliminarConcierto(int id)
         {
-            Concierto concierto = BuscarConciertoPorId(id);
-            var jsonBody = JsonConvert.SerializeObject(concierto);
-            var request = new RestRequest($"/eliminar", Method.Delete);
-
-            request.AddHeader("Content-Type", "application/json");
-            request.AddStringBody(jsonBody, DataFormat.Json);
-
+            var request = new RestRequest($"/eliminar/{id}", Method.Delete);
             var response = _client.Execute(request);
 
             if (!response.IsSuccessful)

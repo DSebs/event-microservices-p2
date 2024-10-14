@@ -43,6 +43,8 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.lblPrincipal = new System.Windows.Forms.Label();
+            this.txtCancionesIds = new System.Windows.Forms.TextBox();
+            this.lblCanciones = new System.Windows.Forms.Label();
             this.panelAgregar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +86,8 @@
             // 
             this.panelAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.panelAgregar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAgregar.Controls.Add(this.txtCancionesIds);
+            this.panelAgregar.Controls.Add(this.lblCanciones);
             this.panelAgregar.Controls.Add(this.txtFecha);
             this.panelAgregar.Controls.Add(this.txtArtista);
             this.panelAgregar.Controls.Add(this.txtPrecio);
@@ -96,7 +100,7 @@
             this.panelAgregar.Controls.Add(this.lblID);
             this.panelAgregar.Location = new System.Drawing.Point(73, 149);
             this.panelAgregar.Name = "panelAgregar";
-            this.panelAgregar.Size = new System.Drawing.Size(331, 302);
+            this.panelAgregar.Size = new System.Drawing.Size(331, 331);
             this.panelAgregar.TabIndex = 18;
             // 
             // txtFecha
@@ -205,12 +209,30 @@
             this.lblPrincipal.TabIndex = 17;
             this.lblPrincipal.Text = "Bucar Concierto";
             // 
+            // txtCancionesIds
+            // 
+            this.txtCancionesIds.Location = new System.Drawing.Point(140, 286);
+            this.txtCancionesIds.Name = "txtCancionesIds";
+            this.txtCancionesIds.Size = new System.Drawing.Size(145, 20);
+            this.txtCancionesIds.TabIndex = 17;
+            // 
+            // lblCanciones
+            // 
+            this.lblCanciones.AutoSize = true;
+            this.lblCanciones.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCanciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.lblCanciones.Location = new System.Drawing.Point(20, 281);
+            this.lblCanciones.Name = "lblCanciones";
+            this.lblCanciones.Size = new System.Drawing.Size(109, 23);
+            this.lblCanciones.TabIndex = 16;
+            this.lblCanciones.Text = "Canciones";
+            // 
             // BuscarPorNombre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(468, 470);
+            this.ClientSize = new System.Drawing.Size(476, 503);
             this.Controls.Add(this.lblSecundario);
             this.Controls.Add(this.txtBuscarNombre);
             this.Controls.Add(this.btnBuscar);
@@ -244,5 +266,7 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblPrincipal;
+        private System.Windows.Forms.TextBox txtCancionesIds;
+        private System.Windows.Forms.Label lblCanciones;
     }
 }

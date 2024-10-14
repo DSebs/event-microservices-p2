@@ -45,7 +45,17 @@ namespace Cliente_Eventos.Cliente.Vista
             try
             {
                 List<Concierto> listaConciertos = servicioConcierto.ListarConciertos();
-                tblConciertos.DataSource = listaConciertos;
+                var conciertosModificados = listaConciertos.Select(c => new
+                {
+                    c.id,
+                    c.nombre,
+                    c.precio,
+                    c.fecha,
+                    c.artista,
+                    CancionIDs = string.Join(", ", c.cancionesIds)
+                }).ToList();
+
+                tblConciertos.DataSource = conciertosModificados;
             }
             catch (Exception ex)
             {
@@ -53,19 +63,32 @@ namespace Cliente_Eventos.Cliente.Vista
             }
         }
 
+
         private void btnListarXPrecio_Click(object sender, EventArgs e)
         {
             try
             {
                 double precioMin = Convert.ToDouble(txtPrecioFiltro.Text);
                 List<Concierto> listaConciertos = servicioConcierto.ListarConciertosMin(precioMin);
-                tblConciertos.DataSource = listaConciertos;
+
+                var conciertosModificados = listaConciertos.Select(c => new
+                {
+                    c.id,
+                    c.nombre,
+                    c.precio,
+                    c.fecha,
+                    c.artista,
+                    CancionIDs = string.Join(", ", c.cancionesIds)
+                }).ToList();
+
+                tblConciertos.DataSource = conciertosModificados;
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void ListarConciertos_Load(object sender, EventArgs e)
         {

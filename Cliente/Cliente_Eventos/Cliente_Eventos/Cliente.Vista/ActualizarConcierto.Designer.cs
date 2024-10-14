@@ -31,6 +31,8 @@
             this.txtBuscarID = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panelAgregar = new System.Windows.Forms.Panel();
+            this.txtCancionesIds = new System.Windows.Forms.TextBox();
+            this.lblCanciones = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtArtista = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -73,6 +75,8 @@
             // 
             this.panelAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.panelAgregar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAgregar.Controls.Add(this.txtCancionesIds);
+            this.panelAgregar.Controls.Add(this.lblCanciones);
             this.panelAgregar.Controls.Add(this.dtpFecha);
             this.panelAgregar.Controls.Add(this.txtArtista);
             this.panelAgregar.Controls.Add(this.txtPrecio);
@@ -86,8 +90,27 @@
             this.panelAgregar.Controls.Add(this.lblID);
             this.panelAgregar.Location = new System.Drawing.Point(69, 119);
             this.panelAgregar.Name = "panelAgregar";
-            this.panelAgregar.Size = new System.Drawing.Size(331, 335);
+            this.panelAgregar.Size = new System.Drawing.Size(331, 372);
             this.panelAgregar.TabIndex = 13;
+            // 
+            // txtCancionesIds
+            // 
+            this.txtCancionesIds.Enabled = false;
+            this.txtCancionesIds.Location = new System.Drawing.Point(140, 289);
+            this.txtCancionesIds.Name = "txtCancionesIds";
+            this.txtCancionesIds.Size = new System.Drawing.Size(145, 20);
+            this.txtCancionesIds.TabIndex = 15;
+            // 
+            // lblCanciones
+            // 
+            this.lblCanciones.AutoSize = true;
+            this.lblCanciones.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCanciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.lblCanciones.Location = new System.Drawing.Point(20, 284);
+            this.lblCanciones.Name = "lblCanciones";
+            this.lblCanciones.Size = new System.Drawing.Size(109, 23);
+            this.lblCanciones.TabIndex = 14;
+            this.lblCanciones.Text = "Canciones";
             // 
             // dtpFecha
             // 
@@ -134,7 +157,7 @@
             this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
             this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnActualizar.Location = new System.Drawing.Point(113, 291);
+            this.btnActualizar.Location = new System.Drawing.Point(113, 333);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(96, 34);
             this.btnActualizar.TabIndex = 5;
@@ -214,7 +237,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(468, 470);
+            this.ClientSize = new System.Drawing.Size(476, 503);
             this.Controls.Add(this.txtBuscarID);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.panelAgregar);
@@ -242,11 +265,13 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label lblArtista;
-        private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblPrincipal;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.TextBox txtCancionesIds;
+        private System.Windows.Forms.Label lblCanciones;
     }
 }

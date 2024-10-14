@@ -13,15 +13,17 @@ namespace Cliente_Eventos.Cliente.Modelo
         public double precio { get; set; }
         public DateTime fecha { get; set; }
         public string artista { get; set; }
+        public List<int> cancionesIds { get; set; }  
 
-        public Concierto(int id, string nombre, double precio, DateTime fecha, string artista)
+        public Concierto(int id, string nombre, double precio, DateTime fecha, string artista, List<int> cancionesIds)
         {
             this.id = id;
             this.nombre = nombre;
             this.precio = precio;
             this.fecha = fecha;
             this.artista = artista;
+            this.cancionesIds = cancionesIds;
         }
-
     }
+
 }

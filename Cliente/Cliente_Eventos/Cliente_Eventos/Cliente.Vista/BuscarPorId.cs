@@ -32,6 +32,7 @@ namespace Cliente_Eventos.Cliente.Vista
                 txtPrecio.Text = concierto.precio.ToString();
                 txtFecha.Text = concierto.fecha.ToString();
                 txtArtista.Text = concierto.artista;
+                txtCancionesIds.Text = string.Join(", ", concierto.cancionesIds);
 
             }
             catch (Exception ex)

@@ -43,6 +43,8 @@
             this.lblID = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscarID = new System.Windows.Forms.TextBox();
+            this.txtCancionesIds = new System.Windows.Forms.TextBox();
+            this.lblCanciones = new System.Windows.Forms.Label();
             this.panelAgregar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +64,8 @@
             // 
             this.panelAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.panelAgregar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAgregar.Controls.Add(this.txtCancionesIds);
+            this.panelAgregar.Controls.Add(this.lblCanciones);
             this.panelAgregar.Controls.Add(this.txtFecha);
             this.panelAgregar.Controls.Add(this.txtArtista);
             this.panelAgregar.Controls.Add(this.txtPrecio);
@@ -75,7 +79,7 @@
             this.panelAgregar.Controls.Add(this.lblID);
             this.panelAgregar.Location = new System.Drawing.Point(69, 123);
             this.panelAgregar.Name = "panelAgregar";
-            this.panelAgregar.Size = new System.Drawing.Size(331, 335);
+            this.panelAgregar.Size = new System.Drawing.Size(331, 368);
             this.panelAgregar.TabIndex = 4;
             // 
             // txtFecha
@@ -123,7 +127,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEliminar.Location = new System.Drawing.Point(113, 291);
+            this.btnEliminar.Location = new System.Drawing.Point(116, 329);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(96, 34);
             this.btnEliminar.TabIndex = 5;
@@ -210,12 +214,31 @@
             this.txtBuscarID.TextChanged += new System.EventHandler(this.txtBuscarID_TextChanged);
             this.txtBuscarID.Enter += new System.EventHandler(this.txtBuscarID_Enter);
             // 
+            // txtCancionesIds
+            // 
+            this.txtCancionesIds.Enabled = false;
+            this.txtCancionesIds.Location = new System.Drawing.Point(140, 289);
+            this.txtCancionesIds.Name = "txtCancionesIds";
+            this.txtCancionesIds.Size = new System.Drawing.Size(145, 20);
+            this.txtCancionesIds.TabIndex = 17;
+            // 
+            // lblCanciones
+            // 
+            this.lblCanciones.AutoSize = true;
+            this.lblCanciones.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCanciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.lblCanciones.Location = new System.Drawing.Point(20, 284);
+            this.lblCanciones.Name = "lblCanciones";
+            this.lblCanciones.Size = new System.Drawing.Size(109, 23);
+            this.lblCanciones.TabIndex = 16;
+            this.lblCanciones.Text = "Canciones";
+            // 
             // EliminarConcierto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(468, 470);
+            this.ClientSize = new System.Drawing.Size(476, 503);
             this.Controls.Add(this.txtBuscarID);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.panelAgregar);
@@ -249,5 +272,7 @@
         private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscarID;
+        private System.Windows.Forms.TextBox txtCancionesIds;
+        private System.Windows.Forms.Label lblCanciones;
     }
 }
