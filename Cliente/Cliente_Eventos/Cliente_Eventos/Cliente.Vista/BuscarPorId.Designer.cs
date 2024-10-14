@@ -220,6 +220,7 @@
             this.Name = "BuscarPorId";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarPorId";
+            this.Load += new System.EventHandler(this.BuscarPorId_Load);
             this.panelAgregar.ResumeLayout(false);
             this.panelAgregar.PerformLayout();
             this.ResumeLayout(false);

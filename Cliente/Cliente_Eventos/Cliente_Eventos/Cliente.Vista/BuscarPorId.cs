@@ -49,5 +49,9 @@ namespace Cliente_Eventos.Cliente.Vista
             }
         }
 
+        private void BuscarPorId_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

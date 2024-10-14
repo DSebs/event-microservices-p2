@@ -81,13 +81,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.Modelo\Cancion.cs" />
     <Compile Include="Cliente.Modelo\Concierto.cs" />
+    <Compile Include="Cliente.Servicio\ServicioCancion.cs" />
     <Compile Include="Cliente.Servicio\ServicioConcierto.cs" />
     <Compile Include="Cliente.Vista\AcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cliente.Vista\AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\ActualizarCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\ActualizarCancion.Designer.cs">
+      <DependentUpon>ActualizarCancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\AgregarCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\AgregarCancion.Designer.cs">
+      <DependentUpon>AgregarCancion.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.Vista\AgregarConcierto.cs">
       <SubType>Form</SubType>
@@ -101,11 +115,29 @@
     <Compile Include="Cliente.Vista\BuscarPorId.Designer.cs">
       <DependentUpon>BuscarPorId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorIdCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorIdCancion.Designer.cs">
+      <DependentUpon>BuscarPorIdCancion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.Vista\BuscarPorNombre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cliente.Vista\BuscarPorNombre.Designer.cs">
       <DependentUpon>BuscarPorNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorNombreCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\BuscarPorNombreCancion.Designer.cs">
+      <DependentUpon>BuscarPorNombreCancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.Vista\EliminarCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\EliminarCancion.Designer.cs">
+      <DependentUpon>EliminarCancion.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.Vista\EliminarConcierto.cs">
       <SubType>Form</SubType>
@@ -119,6 +151,12 @@
     <Compile Include="Cliente.Vista\ActualizarConcierto.Designer.cs">
       <DependentUpon>ActualizarConcierto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.Vista\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.Vista\FramePrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +164,12 @@
       <DependentUpon>FramePrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.Modelo\Program.cs" />
+    <Compile Include="Cliente.Vista\ListarCanciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Vista\ListarCanciones.Designer.cs">
+      <DependentUpon>ListarCanciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.Vista\ListarConciertos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,14 +180,29 @@
     <EmbeddedResource Include="Cliente.Vista\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\ActualizarCancion.resx">
+      <DependentUpon>ActualizarCancion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\AgregarCancion.resx">
+      <DependentUpon>AgregarCancion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\AgregarConcierto.resx">
       <DependentUpon>AgregarConcierto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\BuscarPorId.resx">
       <DependentUpon>BuscarPorId.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\BuscarPorIdCancion.resx">
+      <DependentUpon>BuscarPorIdCancion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\BuscarPorNombre.resx">
       <DependentUpon>BuscarPorNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\BuscarPorNombreCancion.resx">
+      <DependentUpon>BuscarPorNombreCancion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\EliminarCancion.resx">
+      <DependentUpon>EliminarCancion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\EliminarConcierto.resx">
       <DependentUpon>EliminarConcierto.cs</DependentUpon>
@@ -151,8 +210,14 @@
     <EmbeddedResource Include="Cliente.Vista\ActualizarConcierto.resx">
       <DependentUpon>ActualizarConcierto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\FramePrincipal.resx">
       <DependentUpon>FramePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.Vista\ListarCanciones.resx">
+      <DependentUpon>ListarCanciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.Vista\ListarConciertos.resx">
       <DependentUpon>ListarConciertos.cs</DependentUpon>

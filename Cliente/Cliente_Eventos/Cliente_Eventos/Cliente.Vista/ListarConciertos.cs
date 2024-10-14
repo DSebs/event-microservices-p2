@@ -66,5 +66,10 @@ namespace Cliente_Eventos.Cliente.Vista
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void ListarConciertos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
