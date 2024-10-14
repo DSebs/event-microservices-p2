@@ -45,12 +45,27 @@ namespace Cliente_Eventos.Cliente.Vista
                 DateTime fecha = dtpFecha.Value;
                 string artista = txtArtista.Text;
 
-                servicioConcierto.AgregarConcierto(id, nombre, precio, fecha, artista);
+                List<int> cancionesIds = txtCancionesIds.Text.Split(',')
+                                           .Select(int.Parse)
+                                           .ToList();
+
+                servicioConcierto.AgregarConcierto(id, nombre, precio, fecha, artista, cancionesIds);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+
+        private void AgregarConcierto_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

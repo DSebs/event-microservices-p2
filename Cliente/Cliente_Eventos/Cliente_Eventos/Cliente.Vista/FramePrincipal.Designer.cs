@@ -40,6 +40,14 @@
             this.eliminarConciertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarConciertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarConciertosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarCancionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarCancionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarPorIDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarPorNombreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarCancionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarCancionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarCancionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblPrincipal = new System.Windows.Forms.Label();
@@ -56,10 +64,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.conciertoToolStripMenuItem,
+            this.cancionToolStripMenuItem,
             this.ayudaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(78, 9);
+            this.menuStrip1.Location = new System.Drawing.Point(26, 9);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(447, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(558, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuOpcion";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -158,6 +167,78 @@
             this.listarConciertosToolStripMenuItem.Text = "Listar Conciertos";
             this.listarConciertosToolStripMenuItem.Click += new System.EventHandler(this.listarConciertosToolStripMenuItem_Click);
             // 
+            // cancionToolStripMenuItem
+            // 
+            this.cancionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarCancionToolStripMenuItem,
+            this.buscarCancionToolStripMenuItem,
+            this.eliminarCancionToolStripMenuItem,
+            this.actualizarCancionToolStripMenuItem,
+            this.listarCancionesToolStripMenuItem});
+            this.cancionToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
+            this.cancionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(107)))), ((int)(((byte)(32)))));
+            this.cancionToolStripMenuItem.Name = "cancionToolStripMenuItem";
+            this.cancionToolStripMenuItem.Size = new System.Drawing.Size(111, 29);
+            this.cancionToolStripMenuItem.Text = "Cancion";
+            // 
+            // agregarCancionToolStripMenuItem
+            // 
+            this.agregarCancionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.agregarCancionToolStripMenuItem.Name = "agregarCancionToolStripMenuItem";
+            this.agregarCancionToolStripMenuItem.Size = new System.Drawing.Size(280, 30);
+            this.agregarCancionToolStripMenuItem.Text = "Agregar Cancion";
+            this.agregarCancionToolStripMenuItem.Click += new System.EventHandler(this.agregarCancionToolStripMenuItem_Click);
+            // 
+            // buscarCancionToolStripMenuItem
+            // 
+            this.buscarCancionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buscarPorIDToolStripMenuItem1,
+            this.buscarPorNombreToolStripMenuItem1});
+            this.buscarCancionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.buscarCancionToolStripMenuItem.Name = "buscarCancionToolStripMenuItem";
+            this.buscarCancionToolStripMenuItem.Size = new System.Drawing.Size(280, 30);
+            this.buscarCancionToolStripMenuItem.Text = "Buscar Cancion";
+            // 
+            // buscarPorIDToolStripMenuItem1
+            // 
+            this.buscarPorIDToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.buscarPorIDToolStripMenuItem1.Name = "buscarPorIDToolStripMenuItem1";
+            this.buscarPorIDToolStripMenuItem1.Size = new System.Drawing.Size(281, 30);
+            this.buscarPorIDToolStripMenuItem1.Text = "Buscar por ID";
+            this.buscarPorIDToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem1_Click);
+            // 
+            // buscarPorNombreToolStripMenuItem1
+            // 
+            this.buscarPorNombreToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.buscarPorNombreToolStripMenuItem1.Name = "buscarPorNombreToolStripMenuItem1";
+            this.buscarPorNombreToolStripMenuItem1.Size = new System.Drawing.Size(281, 30);
+            this.buscarPorNombreToolStripMenuItem1.Text = "Buscar por Nombre";
+            this.buscarPorNombreToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem1_Click);
+            // 
+            // eliminarCancionToolStripMenuItem
+            // 
+            this.eliminarCancionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.eliminarCancionToolStripMenuItem.Name = "eliminarCancionToolStripMenuItem";
+            this.eliminarCancionToolStripMenuItem.Size = new System.Drawing.Size(280, 30);
+            this.eliminarCancionToolStripMenuItem.Text = "Eliminar Cancion";
+            this.eliminarCancionToolStripMenuItem.Click += new System.EventHandler(this.eliminarCancionToolStripMenuItem_Click);
+            // 
+            // actualizarCancionToolStripMenuItem
+            // 
+            this.actualizarCancionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.actualizarCancionToolStripMenuItem.Name = "actualizarCancionToolStripMenuItem";
+            this.actualizarCancionToolStripMenuItem.Size = new System.Drawing.Size(280, 30);
+            this.actualizarCancionToolStripMenuItem.Text = "Actualizar Cancion";
+            this.actualizarCancionToolStripMenuItem.Click += new System.EventHandler(this.actualizarCancionToolStripMenuItem_Click);
+            // 
+            // listarCancionesToolStripMenuItem
+            // 
+            this.listarCancionesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.listarCancionesToolStripMenuItem.Name = "listarCancionesToolStripMenuItem";
+            this.listarCancionesToolStripMenuItem.Size = new System.Drawing.Size(280, 30);
+            this.listarCancionesToolStripMenuItem.Text = "Listar Canciones";
+            this.listarCancionesToolStripMenuItem.Click += new System.EventHandler(this.listarCancionesToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -247,6 +328,14 @@
         private System.Windows.Forms.ToolStripMenuItem buscarPorIDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarPorNombreToolStripMenuItem;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ToolStripMenuItem cancionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarCancionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarCancionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarPorIDToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem buscarPorNombreToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eliminarCancionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarCancionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarCancionesToolStripMenuItem;
     }
 }
 

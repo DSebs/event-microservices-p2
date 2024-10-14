@@ -12,21 +12,21 @@ using System.Windows.Forms;
 
 namespace Cliente_Eventos.Cliente.Vista
 {
-    public partial class BuscarPorNombre : Form
+    public partial class BuscarPorNombreCancion : Form
     {
-        private ServicioConcierto servicioConcierto;
-        public BuscarPorNombre(ServicioConcierto servicioConcierto)
+        private ServicioCancion servicioCancion;
+        public BuscarPorNombreCancion(ServicioCancion servicioCancion)
         {
             InitializeComponent();
-            this.servicioConcierto = servicioConcierto;
+            this.servicioCancion = servicioCancion;
         }
 
-        private void txtBuscarNombre_Enter(object sender, EventArgs e)
+        private void txtBuscarID_Enter(object sender, EventArgs e)
         {
             if (txtBuscarNombre.Text == "Digite el nombre")
             {
                 txtBuscarNombre.Text = "";
-                txtBuscarNombre.ForeColor = Color.Black; 
+                txtBuscarNombre.ForeColor = Color.Black;
             }
         }
 
@@ -35,14 +35,12 @@ namespace Cliente_Eventos.Cliente.Vista
             try
             {
                 string nombreABuscar = (txtBuscarNombre.Text);
-                Concierto concierto = servicioConcierto.BuscarConciertoPorNomrbe(nombreABuscar);
-                txtID.Text = concierto.id.ToString();
-                txtNombre.Text = concierto.nombre;
-                txtPrecio.Text = concierto.precio.ToString();
-                txtFecha.Text = concierto.fecha.ToString();
-                txtArtista.Text = concierto.artista;
-                txtCancionesIds.Text = string.Join(", ", concierto.cancionesIds);
-
+                Cancion cancion = servicioCancion.BuscarCancionPorNombre(nombreABuscar);
+                txtID.Text = cancion.id.ToString();
+                txtNombre.Text = cancion.nombre;
+                txtDuracion.Text = cancion.duracion.ToString();
+                txtFecha.Text = cancion.fechaLanzamiento.ToString();
+                txtCompositor.Text = cancion.compositor;
             }
             catch (Exception ex)
             {

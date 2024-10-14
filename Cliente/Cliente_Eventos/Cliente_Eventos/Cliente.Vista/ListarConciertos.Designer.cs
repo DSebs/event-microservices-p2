@@ -134,6 +134,7 @@
             this.Name = "ListarConciertos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarConciertos";
+            this.Load += new System.EventHandler(this.ListarConciertos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblConciertos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

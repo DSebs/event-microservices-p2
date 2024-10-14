@@ -12,35 +12,21 @@ using System.Windows.Forms;
 
 namespace Cliente_Eventos.Cliente.Vista
 {
-    public partial class EliminarConcierto : Form
+    public partial class EliminarCancion : Form
     {
-        private ServicioConcierto servicioConcierto;
-        public EliminarConcierto(ServicioConcierto servicioConcierto)
+        private ServicioCancion servicioCancion;
+        public EliminarCancion(ServicioCancion servicioCancion)
         {
             InitializeComponent();
-            this.servicioConcierto = servicioConcierto;
+            this.servicioCancion = servicioCancion;
         }
 
-        private void lblPrincipal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EliminarConcierto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBuscarID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void txtBuscarID_Enter(object sender, EventArgs e)
         {
             if (txtBuscarID.Text == "Digite el ID")
             {
                 txtBuscarID.Text = "";
-                txtBuscarID.ForeColor = Color.Black; // Cambia el color del texto si es necesario
+                txtBuscarID.ForeColor = Color.Black;
             }
         }
 
@@ -49,14 +35,12 @@ namespace Cliente_Eventos.Cliente.Vista
             try
             {
                 int id = Convert.ToInt32(txtBuscarID.Text);
-                Concierto concierto = servicioConcierto.BuscarConciertoPorId(id);
-                txtID.Text = concierto.id.ToString();
-                txtNombre.Text = concierto.nombre;
-                txtPrecio.Text = concierto.precio.ToString();
-                txtFecha.Text = concierto.fecha.ToString();
-                txtArtista.Text = concierto.artista;
-                txtCancionesIds.Text = string.Join(", ", concierto.cancionesIds);
-
+                Cancion cancion = servicioCancion.BuscarCancionPorId(id);
+                txtID.Text = cancion.id.ToString();
+                txtNombre.Text = cancion.nombre;
+                txtDuracion.Text = cancion.duracion.ToString();
+                txtFecha.Text = cancion.fechaLanzamiento.ToString();
+                txtCompositor.Text = cancion.compositor;
             }
             catch (Exception ex)
             {
@@ -69,7 +53,7 @@ namespace Cliente_Eventos.Cliente.Vista
             try
             {
                 int id = Convert.ToInt32(txtBuscarID.Text);
-                servicioConcierto.EliminarConcierto(id);
+                servicioCancion.EliminarCancion(id);
             }
             catch (Exception ex)
             {

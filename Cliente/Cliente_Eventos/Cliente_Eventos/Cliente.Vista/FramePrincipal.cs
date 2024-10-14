@@ -16,8 +16,13 @@ namespace Cliente_Eventos
     public partial class FramePrincipal : Form
     {
         private ServicioConcierto servicioConcierto;
+        private ServicioCancion servicioCancion;
+
         private RestClientOptions options;
         private RestClient client;
+
+        private RestClientOptions optionsCancion;
+        private RestClient clientCancion;
         public FramePrincipal()
         {
             InitializeComponent();
@@ -25,6 +30,9 @@ namespace Cliente_Eventos
             client = new RestClient(options);
             servicioConcierto = new ServicioConcierto(client);
 
+            optionsCancion = new RestClientOptions("http://localhost:8090/cancion");
+            clientCancion = new RestClient(optionsCancion);
+            servicioCancion = new ServicioCancion(clientCancion);
         }
 
         private void buscaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -99,6 +107,43 @@ namespace Cliente_Eventos
         {
             ListarConciertos listarConciertos = new ListarConciertos(servicioConcierto);
             listarConciertos.Show();
+        }
+
+        private void agregarCancionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarCancion agregarCancion = new AgregarCancion(servicioCancion);
+            agregarCancion.Show();
+        }
+
+        private void buscarPorIDToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BuscarPorIdCancion buscarPorIdCancion = new BuscarPorIdCancion(servicioCancion);   
+            buscarPorIdCancion.Show();
+
+        }
+
+        private void buscarPorNombreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BuscarPorNombreCancion buscarPorNombreCancion = new BuscarPorNombreCancion(servicioCancion);
+            buscarPorNombreCancion.Show();
+        }
+
+        private void eliminarCancionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarCancion eliminarCancion = new EliminarCancion(servicioCancion);
+            eliminarCancion.Show();
+        }
+
+        private void actualizarCancionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarCancion actualizarCancion = new ActualizarCancion(servicioCancion);
+            actualizarCancion.Show();
+        }
+
+        private void listarCancionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarCanciones listarCanciones = new ListarCanciones(servicioCancion);    
+            listarCanciones.Show();
         }
     }
 }

@@ -38,3 +38,10 @@ F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\bin\Debug\Syste
 F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\bin\Debug\System.Threading.Tasks.Extensions.xml
 F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\bin\Debug\System.ValueTuple.xml
 F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_.3E0F8249.Up2Date
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.AgregarCancion.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.BuscarPorIdCancion.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.BuscarPorNombreCancion.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.EliminarCancion.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.ActualizarCancion.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.ListarCanciones.resources
+F:\Uni\Dev Empresariales\Cliente\Cliente_Eventos\Cliente_Eventos\obj\Debug\Cliente_Eventos.Cliente.Vista.Form1.resources

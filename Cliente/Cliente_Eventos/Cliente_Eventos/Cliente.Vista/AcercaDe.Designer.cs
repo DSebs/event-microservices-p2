@@ -77,7 +77,8 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 44);
             this.label3.TabIndex = 5;
-            this.label3.Text = "V 1.0";
+            this.label3.Text = "V 2.0";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // AcercaDe
             // 

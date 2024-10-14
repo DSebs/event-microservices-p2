@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace Cliente_Eventos.Cliente.Vista
 {
-    public partial class AcercaDe : Form
+    public partial class Form1 : Form
     {
-        public AcercaDe()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void lblPrincipal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AcercaDe_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

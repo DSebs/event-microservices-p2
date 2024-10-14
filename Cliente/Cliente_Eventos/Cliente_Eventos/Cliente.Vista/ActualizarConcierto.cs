@@ -46,11 +46,13 @@ namespace Cliente_Eventos.Cliente.Vista
                 txtPrecio.Text = concierto.precio.ToString();
                 dtpFecha.Value = concierto.fecha;
                 txtArtista.Text = concierto.artista;
+                txtCancionesIds.Text = string.Join(", ", concierto.cancionesIds);
 
                 txtNombre.Enabled = true;
                 txtPrecio.Enabled = true;
                 txtArtista.Enabled = true;
                 dtpFecha.Enabled = true;
+                txtCancionesIds.Enabled = true;
 
             }
             catch (Exception ex)
@@ -63,6 +65,7 @@ namespace Cliente_Eventos.Cliente.Vista
         {
             try
             {
+               
                 int idABuscar = Convert.ToInt32(txtBuscarID.Text);
                 int id = Convert.ToInt32(txtID.Text);
                 string nombre = txtNombre.Text;
@@ -70,13 +73,22 @@ namespace Cliente_Eventos.Cliente.Vista
                 DateTime fecha = dtpFecha.Value;
                 string artista = txtArtista.Text;
 
-                servicioConcierto.ActualizarConcierto(idABuscar,id,nombre,precio,fecha,artista);
+                List<int> cancionesIds = txtCancionesIds.Text.Split(',')
+                                           .Select(int.Parse)
+                                           .ToList();
 
+                servicioConcierto.ActualizarConcierto(idABuscar, id, nombre, precio, fecha, artista, cancionesIds);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+
+        private void ActualizarConcierto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
