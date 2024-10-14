@@ -67,5 +67,14 @@ namespace Cliente_Eventos.Cliente.Vista
         {
 
         }
+
+        private void txtCancionesIds_Enter(object sender, EventArgs e)
+        {
+            if (txtCancionesIds.Text == "Digite los ids de las canciones")
+            {
+                txtCancionesIds.Text = "";
+                txtCancionesIds.ForeColor = Color.Black;
+            }
+        }
     }
 }

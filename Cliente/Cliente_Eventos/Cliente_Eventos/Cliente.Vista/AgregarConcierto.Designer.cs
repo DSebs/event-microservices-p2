@@ -82,10 +82,15 @@
             // 
             // txtCancionesIds
             // 
+            this.txtCancionesIds.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCancionesIds.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtCancionesIds.Location = new System.Drawing.Point(140, 291);
             this.txtCancionesIds.Name = "txtCancionesIds";
-            this.txtCancionesIds.Size = new System.Drawing.Size(145, 20);
+            this.txtCancionesIds.Size = new System.Drawing.Size(145, 18);
             this.txtCancionesIds.TabIndex = 13;
+            this.txtCancionesIds.Text = "Digite los ids de las canciones";
+            this.txtCancionesIds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCancionesIds.Enter += new System.EventHandler(this.txtCancionesIds_Enter);
             // 
             // lblCanciones
             // 

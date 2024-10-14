@@ -66,9 +66,10 @@ public class ControladorCancion {
     }
 
     @GetMapping("/listar/duracion/{duracionMin}")
-    public ResponseEntity<List<Cancion>> listarCancionesMin(@PathVariable double duracionMin) {
+    public ResponseEntity<List<Cancion>> listarCancionesMin(@PathVariable String duracionMin) {
         try {
-            List<Cancion> canciones = servicioCancion.listarCancionesMin(duracionMin);
+            double duracionMinD = Double.parseDouble(duracionMin.replace(',', '.'));
+            List<Cancion> canciones = servicioCancion.listarCancionesMin(duracionMinD);
             return ResponseEntity.ok(canciones);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().build();

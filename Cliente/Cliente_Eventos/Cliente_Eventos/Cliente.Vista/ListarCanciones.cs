@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,8 +39,9 @@ namespace Cliente_Eventos.Cliente.Vista
         {
             try
             {
-                double duracionMinima = Convert.ToDouble(txtDuracionFiltro.Text);
-                List<Cancion> listaCancion = servicioCancion.ListarCancionesMin(duracionMinima);
+                double duracionMin = double.Parse(txtDuracionFiltro.Text, CultureInfo.InvariantCulture);
+                string duracionMinString = duracionMin.ToString(CultureInfo.InvariantCulture);
+                List<Cancion> listaCancion = servicioCancion.ListarCancionesMin(duracionMinString);
                 tblConciertos.DataSource = listaCancion;
             }
             catch (Exception ex)
@@ -47,5 +49,14 @@ namespace Cliente_Eventos.Cliente.Vista
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void txtDuracionFiltro_Enter(object sender, EventArgs e)
+        {
+            if (txtDuracionFiltro.Text == "Digite la duracion minima")
+            {
+                txtDuracionFiltro.Text = "";
+                txtDuracionFiltro.ForeColor = Color.Black;
+            }
+        }
+
     }
 }

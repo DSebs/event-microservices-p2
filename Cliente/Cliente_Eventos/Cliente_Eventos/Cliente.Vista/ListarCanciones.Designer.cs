@@ -71,6 +71,7 @@
             this.txtDuracionFiltro.Size = new System.Drawing.Size(138, 20);
             this.txtDuracionFiltro.TabIndex = 18;
             this.txtDuracionFiltro.Text = "Digite la duracion minima";
+            this.txtDuracionFiltro.Enter += new System.EventHandler(this.txtDuracionFiltro_Enter);
             // 
             // lblSecundario
             // 

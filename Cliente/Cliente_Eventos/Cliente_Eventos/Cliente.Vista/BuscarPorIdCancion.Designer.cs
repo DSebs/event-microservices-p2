@@ -65,6 +65,7 @@
             this.txtBuscarID.Size = new System.Drawing.Size(163, 20);
             this.txtBuscarID.TabIndex = 19;
             this.txtBuscarID.Text = "Digite el ID";
+            this.txtBuscarID.Enter += new System.EventHandler(this.txtBuscarID_Enter);
             // 
             // btnBuscar
             // 
@@ -218,7 +219,6 @@
             this.Name = "BuscarPorIdCancion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarPorIdCancion";
-            this.Enter += new System.EventHandler(this.txtBuscarID_Enter);
             this.panelAgregar.ResumeLayout(false);
             this.panelAgregar.PerformLayout();
             this.ResumeLayout(false);

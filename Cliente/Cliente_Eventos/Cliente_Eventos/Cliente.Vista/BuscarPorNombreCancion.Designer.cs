@@ -179,6 +179,7 @@
             this.txtBuscarNombre.Size = new System.Drawing.Size(163, 20);
             this.txtBuscarNombre.TabIndex = 24;
             this.txtBuscarNombre.Text = "Digite el nombre";
+            this.txtBuscarNombre.Enter += new System.EventHandler(this.txtBuscarID_Enter);
             // 
             // btnBuscar
             // 
@@ -218,7 +219,6 @@
             this.Name = "BuscarPorNombreCancion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarPorNombreCancion";
-            this.Enter += new System.EventHandler(this.txtBuscarID_Enter);
             this.panelAgregar.ResumeLayout(false);
             this.panelAgregar.PerformLayout();
             this.ResumeLayout(false);

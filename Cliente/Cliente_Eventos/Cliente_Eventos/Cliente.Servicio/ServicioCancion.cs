@@ -128,11 +128,10 @@ namespace Cliente_Eventos.Cliente.Servicio
             }
         }
 
-        public List<Cancion> ListarCancionesMin(double duracionMin)
+        public List<Cancion> ListarCancionesMin(string duracionMin)
         {
             var request = new RestRequest($"/listar/duracion/{duracionMin}", Method.Get);
             var response = _client.Execute(request);
-
             if (response.IsSuccessful)
             {
                 List<Cancion> canciones = JsonConvert.DeserializeObject<List<Cancion>>(response.Content);

@@ -64,5 +64,14 @@ namespace Cliente_Eventos.Cliente.Vista
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtBuscarID_Enter(object sender, EventArgs e)
+        {
+            if (txtBuscarID.Text == "Digite el ID")
+            {
+                txtBuscarID.Text = "";
+                txtBuscarID.ForeColor = Color.Black;
+            }
+        }
     }
 }

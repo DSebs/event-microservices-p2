@@ -49,11 +49,12 @@
             // txtBuscarID
             // 
             this.txtBuscarID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtBuscarID.Location = new System.Drawing.Point(232, 99);
+            this.txtBuscarID.Location = new System.Drawing.Point(227, 99);
             this.txtBuscarID.Name = "txtBuscarID";
             this.txtBuscarID.Size = new System.Drawing.Size(163, 20);
             this.txtBuscarID.TabIndex = 22;
             this.txtBuscarID.Text = "Digite el ID";
+            this.txtBuscarID.Enter += new System.EventHandler(this.txtBuscarID_Enter);
             // 
             // btnBuscar
             // 

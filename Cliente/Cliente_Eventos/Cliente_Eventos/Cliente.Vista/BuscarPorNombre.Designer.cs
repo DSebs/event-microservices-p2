@@ -32,6 +32,8 @@
             this.txtBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panelAgregar = new System.Windows.Forms.Panel();
+            this.txtCancionesIds = new System.Windows.Forms.TextBox();
+            this.lblCanciones = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtArtista = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.lblPrincipal = new System.Windows.Forms.Label();
-            this.txtCancionesIds = new System.Windows.Forms.TextBox();
-            this.lblCanciones = new System.Windows.Forms.Label();
             this.panelAgregar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,6 +102,25 @@
             this.panelAgregar.Name = "panelAgregar";
             this.panelAgregar.Size = new System.Drawing.Size(331, 331);
             this.panelAgregar.TabIndex = 18;
+            // 
+            // txtCancionesIds
+            // 
+            this.txtCancionesIds.Enabled = false;
+            this.txtCancionesIds.Location = new System.Drawing.Point(140, 286);
+            this.txtCancionesIds.Name = "txtCancionesIds";
+            this.txtCancionesIds.Size = new System.Drawing.Size(145, 20);
+            this.txtCancionesIds.TabIndex = 17;
+            // 
+            // lblCanciones
+            // 
+            this.lblCanciones.AutoSize = true;
+            this.lblCanciones.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCanciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
+            this.lblCanciones.Location = new System.Drawing.Point(20, 281);
+            this.lblCanciones.Name = "lblCanciones";
+            this.lblCanciones.Size = new System.Drawing.Size(109, 23);
+            this.lblCanciones.TabIndex = 16;
+            this.lblCanciones.Text = "Canciones";
             // 
             // txtFecha
             // 
@@ -208,24 +227,6 @@
             this.lblPrincipal.Size = new System.Drawing.Size(311, 44);
             this.lblPrincipal.TabIndex = 17;
             this.lblPrincipal.Text = "Bucar Concierto";
-            // 
-            // txtCancionesIds
-            // 
-            this.txtCancionesIds.Location = new System.Drawing.Point(140, 286);
-            this.txtCancionesIds.Name = "txtCancionesIds";
-            this.txtCancionesIds.Size = new System.Drawing.Size(145, 20);
-            this.txtCancionesIds.TabIndex = 17;
-            // 
-            // lblCanciones
-            // 
-            this.lblCanciones.AutoSize = true;
-            this.lblCanciones.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCanciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(55)))), ((int)(((byte)(102)))));
-            this.lblCanciones.Location = new System.Drawing.Point(20, 281);
-            this.lblCanciones.Name = "lblCanciones";
-            this.lblCanciones.Size = new System.Drawing.Size(109, 23);
-            this.lblCanciones.TabIndex = 16;
-            this.lblCanciones.Text = "Canciones";
             // 
             // BuscarPorNombre
             // 

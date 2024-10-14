@@ -42,6 +42,7 @@ public class ControladorEvento {
             List<Integer> cancionesIds = objectMapper.convertValue(rootNode.get("cancionesIds"), List.class);
             double precio = rootNode.get("precio").asDouble();
             String artista = rootNode.get("artista").asText();
+            System.out.println(cancionesIds);
 
             // Parseo de fecha con LocalDateTime
             String fechaString = rootNode.get("fecha").asText();
@@ -170,9 +171,10 @@ public class ControladorEvento {
 
 
     @GetMapping("/listar/precio/{precioMin}")
-    public ResponseEntity<List<ConciertoInfo>> listarConciertosMin(@PathVariable double precioMin) {
+    public ResponseEntity<List<ConciertoInfo>> listarConciertosMin(@PathVariable String precioMin) {
         try {
-            List<Concierto> conciertos = servicioEvento.listarConciertosMin(precioMin);
+            double precioMinDouble = Double.parseDouble(precioMin.replace(',', '.'));
+            List<Concierto> conciertos = servicioEvento.listarConciertosMin(precioMinDouble);
             List<ConciertoInfo> conciertosInfo = conciertos.stream()
                     .map(concierto -> new ConciertoInfo(
                             concierto.getId(),
@@ -187,8 +189,10 @@ public class ControladorEvento {
                     .collect(Collectors.toList());
 
             return ResponseEntity.ok(conciertosInfo);
+        } catch (NumberFormatException e) {
+            return ResponseEntity.badRequest().body(null);
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.badRequest().body(null);
         }
     }
 

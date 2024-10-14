@@ -24,8 +24,7 @@ namespace Cliente_Eventos.Cliente.Servicio
         {
             Concierto concierto = new Concierto(id, nombre, precio, fecha, artista, cancionesIds);
             var jsonBody = JsonConvert.SerializeObject(concierto);
-
-            var request = new RestRequest("/evento/concierto/add", Method.Post);
+            var request = new RestRequest("/add", Method.Post);
 
             request.AddHeader("Content-Type", "application/json");
             request.AddStringBody(jsonBody, DataFormat.Json);
@@ -77,7 +76,7 @@ namespace Cliente_Eventos.Cliente.Servicio
             Concierto concierto = new Concierto(id, nombre, precio, fecha, artista, cancionesIds);
             var jsonBody = JsonConvert.SerializeObject(concierto);
 
-            var request = new RestRequest($"/evento/concierto/{idConciertoExistente}", Method.Put);
+            var request = new RestRequest($"/{idConciertoExistente}", Method.Put);
 
             request.AddHeader("Content-Type", "application/json");
             request.AddStringBody(jsonBody, DataFormat.Json);
@@ -127,11 +126,10 @@ namespace Cliente_Eventos.Cliente.Servicio
             }
         }
 
-        public List<Concierto> ListarConciertosMin(double precioMin)
+        public List<Concierto> ListarConciertosMin(string precioMin)
         {
             var request = new RestRequest($"/listar/precio/{precioMin}", Method.Get);
             var response = _client.Execute(request);
-
             if (response.IsSuccessful)
             {
                 List<Concierto> conciertos = JsonConvert.DeserializeObject<List<Concierto>>(response.Content);

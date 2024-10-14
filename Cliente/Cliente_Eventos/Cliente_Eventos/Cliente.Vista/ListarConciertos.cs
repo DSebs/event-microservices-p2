@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,9 +69,10 @@ namespace Cliente_Eventos.Cliente.Vista
         {
             try
             {
-                double precioMin = Convert.ToDouble(txtPrecioFiltro.Text);
-                List<Concierto> listaConciertos = servicioConcierto.ListarConciertosMin(precioMin);
+                double precioMin = double.Parse(txtPrecioFiltro.Text, CultureInfo.InvariantCulture);
+                string precioMinString = precioMin.ToString(CultureInfo.InvariantCulture);
 
+                List<Concierto> listaConciertos = servicioConcierto.ListarConciertosMin(precioMinString);
                 var conciertosModificados = listaConciertos.Select(c => new
                 {
                     c.id,
@@ -80,7 +82,6 @@ namespace Cliente_Eventos.Cliente.Vista
                     c.artista,
                     CancionIDs = string.Join(", ", c.cancionesIds)
                 }).ToList();
-
                 tblConciertos.DataSource = conciertosModificados;
             }
             catch (Exception ex)
