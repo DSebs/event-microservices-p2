@@ -60,7 +60,7 @@ public class ServicioEvento {
         }
     }
 
-    public List<Evento> listarConciertos(){
+    public ArrayList<Evento> listarConciertos(){
         return new ArrayList<>(eventos);
     }
 

@@ -144,16 +144,49 @@ public class ControladorEvento {
     }
 
     @GetMapping("/listar")
-    public ResponseEntity<List<Evento>> listarConciertos() {
-        List<Evento> conciertos = servicioEvento.listarConciertos();
-        return ResponseEntity.ok(conciertos);
+    public ResponseEntity<List<ConciertoInfo>> listarConciertos() {
+        // Filtrar los eventos para obtener solo los conciertos
+        List<Concierto> conciertos = servicioEvento.listarConciertos().stream()
+                .filter(evento -> evento instanceof Concierto)  // Filtrar solo los conciertos
+                .map(evento -> (Concierto) evento)  // Castear a Concierto
+                .collect(Collectors.toList());
+
+        // Convertir los conciertos a ConciertoInfo
+        List<ConciertoInfo> conciertosInfo = conciertos.stream()
+                .map(concierto -> new ConciertoInfo(
+                        concierto.getId(),
+                        concierto.getNombre(),
+                        concierto.getFecha(),
+                        concierto.getPrecio(),
+                        concierto.getArtista(),
+                        concierto.getCanciones().stream()
+                                .map(Cancion::getId)
+                                .collect(Collectors.toList())
+                ))
+                .collect(Collectors.toList());
+
+        return ResponseEntity.ok(conciertosInfo);
     }
 
+
     @GetMapping("/listar/precio/{precioMin}")
-    public ResponseEntity<List<Concierto>> listarConciertosMin(@PathVariable double precioMin) {
+    public ResponseEntity<List<ConciertoInfo>> listarConciertosMin(@PathVariable double precioMin) {
         try {
             List<Concierto> conciertos = servicioEvento.listarConciertosMin(precioMin);
-            return ResponseEntity.ok(conciertos);
+            List<ConciertoInfo> conciertosInfo = conciertos.stream()
+                    .map(concierto -> new ConciertoInfo(
+                            concierto.getId(),
+                            concierto.getNombre(),
+                            concierto.getFecha(),
+                            concierto.getPrecio(),
+                            concierto.getArtista(),
+                            concierto.getCanciones().stream()
+                                    .map(Cancion::getId)
+                                    .collect(Collectors.toList())
+                    ))
+                    .collect(Collectors.toList());
+
+            return ResponseEntity.ok(conciertosInfo);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().build();
         }
@@ -200,7 +233,22 @@ public class ControladorEvento {
 
             // Llamar al servicio para actualizar el concierto
             Concierto concierto = servicioEvento.actualizarConcierto(id, conciertoActualizado);
-            return ResponseEntity.ok(concierto);
+
+            // Convertir el objeto Concierto actualizado a ConciertoInfo para devolverlo al cliente
+            List<Integer> cancionesIdsActualizadas = concierto.getCanciones().stream()
+                    .map(Cancion::getId)
+                    .collect(Collectors.toList());
+
+            ConciertoInfo conciertoInfo = new ConciertoInfo(
+                    concierto.getId(),
+                    concierto.getNombre(),
+                    concierto.getFecha(),
+                    concierto.getPrecio(),
+                    concierto.getArtista(),
+                    cancionesIdsActualizadas
+            );
+
+            return ResponseEntity.ok(conciertoInfo);
 
         } catch (JsonProcessingException e) {
             // Error al procesar el JSON
@@ -219,5 +267,4 @@ public class ControladorEvento {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error interno del servidor: " + e.getMessage());
         }
     }
-
 }
