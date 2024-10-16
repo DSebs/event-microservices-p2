@@ -50,6 +50,10 @@ public class ControladorEvento {
             LocalDateTime fecha = LocalDateTime.parse(fechaString, formatter);
 
             // Obtener las canciones a partir de los IDs
+            if(servicioEvento.validarCanciones(cancionesIds,id) == true){
+                return ResponseEntity.badRequest().body("Ya hay una cancion asociada a un concierto");
+            }
+
             List<Cancion> canciones = new ArrayList<>();
             for (Integer cancionId : cancionesIds) {
                 Cancion cancion = servicioCancion.buscarCancionId(cancionId);
@@ -217,6 +221,10 @@ public class ControladorEvento {
             LocalDateTime fecha = LocalDateTime.parse(fechaString, formatter);
 
             // Obtener las canciones a partir de los IDs
+            if(servicioEvento.validarCanciones(cancionesIds, id) == true){
+                return ResponseEntity.badRequest().body("Ya hay una cancion asociada a un concierto");
+            }
+
             List<Cancion> canciones = new ArrayList<>();
             for (Integer cancionId : cancionesIds) {
                 Cancion cancion = servicioCancion.buscarCancionId(cancionId);

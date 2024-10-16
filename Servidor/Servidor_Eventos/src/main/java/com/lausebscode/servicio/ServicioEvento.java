@@ -98,6 +98,26 @@ public class ServicioEvento {
         return conciertoExistente;
     }
 
+    public Boolean validarCanciones(List<Integer> ids, int conciertoIdActual) {
+        for (Evento eve : eventos) {
+            Concierto concierto = (Concierto) eve;
+
+            // Saltamos la validación si es el mismo concierto
+            if (concierto.getId() == conciertoIdActual) {
+                continue;
+            }
+
+            boolean tenerCancion = false;
+            for (int id : ids) {
+                // Validamos si alguna canción ya está en otro concierto
+                tenerCancion = concierto.tengoCancion(id);
+                if (tenerCancion) {
+                    return true; // Canción duplicada en otro concierto
+                }
+            }
+        }
+        return false; // No hay duplicados
+    }
     private void validarConcierto(Concierto concierto) {
         if (concierto == null) {
             throw new IllegalArgumentException("El concierto no puede ser null");

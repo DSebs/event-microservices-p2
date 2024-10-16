@@ -16,4 +16,13 @@ public class Concierto extends Evento {
 
     private List<Cancion> canciones;
 
+    public Boolean tengoCancion(int idsillo)
+    {
+        for(Cancion i : canciones){
+            if( i.getId() == idsillo){
+                return true;
+            }
+        }
+        return false;
+    }
 }
