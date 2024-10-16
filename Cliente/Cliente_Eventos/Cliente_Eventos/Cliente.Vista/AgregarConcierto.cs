@@ -45,9 +45,19 @@ namespace Cliente_Eventos.Cliente.Vista
                 DateTime fecha = dtpFecha.Value;
                 string artista = txtArtista.Text;
 
-                List<int> cancionesIds = txtCancionesIds.Text.Split(',')
-                                           .Select(int.Parse)
-                                           .ToList();
+                List<int> cancionesIds;
+
+                if (string.IsNullOrWhiteSpace(txtCancionesIds.Text))
+                {
+                    cancionesIds = new List<int>();
+                }
+                else
+                {
+                    cancionesIds = txtCancionesIds.Text
+                                    .Split(',')
+                                    .Select(int.Parse)
+                                    .ToList();
+                }
 
                 servicioConcierto.AgregarConcierto(id, nombre, precio, fecha, artista, cancionesIds);
             }

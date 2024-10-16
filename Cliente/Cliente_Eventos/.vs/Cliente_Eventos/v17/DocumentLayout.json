@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\listarcanciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\listarcanciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\listarcanciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\listarcanciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\eliminarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\eliminarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\actualizarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\buscarporid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\buscarporid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\frameprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +46,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActualizarConcierto.cs",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:06:04.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ActualizarConcierto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:06:03.093Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\Form1.cs",
+              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\Form1.cs",
+              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:05:23.62Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AgregarConcierto.cs",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAcwEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T21:08:24.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AgregarConcierto.cs [Dise\u00F1o]",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
@@ -80,56 +109,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ListarCanciones.cs",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:42:49.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListarCanciones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ListarCanciones.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:42:43.876Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ActualizarCancion.cs",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAA9wEoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:41:55.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EliminarCancion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\EliminarCancion.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\EliminarCancion.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\EliminarCancion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\EliminarCancion.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:41:36.406Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ActualizarCancion.cs [Dise\u00F1o]",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs",
@@ -141,20 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BuscarPorId.cs",
-              "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\BuscarPorId.cs",
-              "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\BuscarPorId.cs",
-              "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\BuscarPorId.cs",
-              "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\BuscarPorId.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:36:31.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "FramePrincipal.cs",
               "DocumentMoniker": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
