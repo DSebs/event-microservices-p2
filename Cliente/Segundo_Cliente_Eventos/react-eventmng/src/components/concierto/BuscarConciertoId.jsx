@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { buscarConciertoPorId } from '../../services/conciertoService';
-import './BuscarConciertoId.css';
 
 const BuscarConcierto = () => {
   const [id, setId] = useState('');

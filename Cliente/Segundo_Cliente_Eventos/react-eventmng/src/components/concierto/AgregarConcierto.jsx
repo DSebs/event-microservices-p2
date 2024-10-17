@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { agregarConcierto } from '../../services/conciertoService';
-import './AgregarConcierto.css'; 
 
 const AgregarConcierto = () => {
   const [concierto, setConcierto] = useState({

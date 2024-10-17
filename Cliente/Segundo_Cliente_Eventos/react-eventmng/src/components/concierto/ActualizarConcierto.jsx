@@ -1,54 +1,51 @@
 import React, { useState } from 'react';
-import { buscarConciertoPorId, actualizarConcierto } from '../../services/conciertoService';
+import { actualizarConcierto, buscarConciertoPorId } from '../../services/conciertoService';
 
 const ActualizarConcierto = () => {
   const [id, setId] = useState('');
-  const [concierto, setConcierto] = useState({ cancionesIds: [] }); // Inicializar como objeto con cancionesIds como array
-  const [actualizado, setActualizado] = useState(false);
+  const [concierto, setConcierto] = useState({
+    nombre: '',
+    precio: '',
+    fecha: '',
+    artista: '',
+    cancionesIds: []
+  });
 
-  const handleBuscar = async (e) => {
-    e.preventDefault();
+  const buscarConcierto = async () => {
     try {
-      const resultado = await buscarConciertoPorId(id);
-      // Asegurarse de que cancionesIds sea un array
+      const conciertoEncontrado = await buscarConciertoPorId(id);
       setConcierto({
-        ...resultado,
-        cancionesIds: Array.isArray(resultado.cancionesIds) ? resultado.cancionesIds : []
+        ...conciertoEncontrado,
+        cancionesIds: conciertoEncontrado.cancionesIds || []
       });
-      setActualizado(false);
     } catch (error) {
-      alert('Error al buscar concierto: ' + error.message);
+      console.error('Error al buscar el concierto:', error);
+      alert('Error al buscar el concierto');
     }
   };
-
-  const handleActualizar = async (e) => {
-    e.preventDefault();
-    try {
-      // Verificar si la fecha tiene exactamente el formato 'yyyy-MM-ddTHH:mm:ss'
-      const tieneSegundos = concierto.fecha.split(":").length === 3;
-      const fechaAjustada = tieneSegundos ? concierto.fecha : concierto.fecha + ":00";
-
-      const conciertoAjustado = { ...concierto, fecha: fechaAjustada };
-
-      await actualizarConcierto(id, conciertoAjustado);
-      setActualizado(true);
-    } catch (error) {
-      alert('Error al actualizar concierto: ' + error.message);
-    }
-  };
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    
-    // Manejo específico del campo cancionesIds
-    if (name === 'cancionesIds') {
-      setConcierto(prev => ({
-        ...prev,
-        [name]: value.split(',').map(Number) // Convertir el input en array de números
-      }));
-    } else {
-      setConcierto(prev => ({ ...prev, [name]: value }));
+    setConcierto(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleCancionesIdsChange = (e) => {
+    const idsString = e.target.value;
+    const idsArray = idsString.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id));
+    setConcierto(prev => ({ ...prev, cancionesIds: idsArray }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const tieneSegundos = concierto.fecha.split(":").length === 3;
+    const fechaAjustada = tieneSegundos ? concierto.fecha : concierto.fecha + ":00";
+    const conciertoAjustado = { ...concierto, fecha: fechaAjustada };
+
+    try {
+      await actualizarConcierto(id, conciertoAjustado);
+      alert('Concierto actualizado exitosamente');
+    } catch (error) {
+      alert('Error al actualizar concierto: ' + error.message);
     }
   };
 
@@ -59,100 +56,74 @@ const ActualizarConcierto = () => {
           <div className="card">
             <div className="card-body">
               <h2 className="card-title text-center mb-4">Actualizar Concierto</h2>
-              <form onSubmit={handleBuscar}>
+              <div className="mb-3">
+                <input
+                  type="number"
+                  className="form-control"
+                  value={id}
+                  onChange={(e) => setId(e.target.value)}
+                  placeholder="ID del concierto"
+                />
+                <button className="btn btn-secondary mt-2" onClick={buscarConcierto}>Buscar Concierto</button>
+              </div>
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="nombre"
+                    value={concierto.nombre}
+                    onChange={handleChange}
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
                 <div className="mb-3">
                   <input
                     type="number"
                     className="form-control"
-                    value={id}
-                    onChange={(e) => setId(e.target.value)}
-                    placeholder="Digite el ID del Concierto"
+                    name="precio"
+                    value={concierto.precio}
+                    onChange={handleChange}
+                    placeholder="Precio"
                     required
                   />
                 </div>
+                <div className="mb-3">
+                  <input
+                    type="datetime-local"
+                    className="form-control"
+                    name="fecha"
+                    value={concierto.fecha}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="artista"
+                    value={concierto.artista}
+                    onChange={handleChange}
+                    placeholder="Artista"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="cancionesIds"
+                    value={concierto.cancionesIds.join(',')}
+                    onChange={handleCancionesIdsChange}
+                    placeholder="IDs de canciones (separados por coma)"
+                  />
+                </div>
                 <div className="d-grid">
-                  <button type="submit" className="btn btn-primary">Buscar Concierto</button>
+                  <button type="submit" className="btn btn-primary">Actualizar</button>
                 </div>
               </form>
-
-              {concierto && (
-                <form className="mt-4" onSubmit={handleActualizar}>
-                  <div className="mb-3">
-                    <label htmlFor="nombre" className="form-label">Nombre</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nombre"
-                      name="nombre"
-                      value={concierto.nombre}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-3">
-                    <label htmlFor="precio" className="form-label">Precio</label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="precio"
-                      name="precio"
-                      value={concierto.precio}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-3">
-                    <label htmlFor="fecha" className="form-label">Fecha</label>
-                    <input
-                      type="datetime-local"
-                      className="form-control"
-                      id="fecha"
-                      name="fecha"
-                      value={concierto.fecha}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-3">
-                    <label htmlFor="artista" className="form-label">Artista</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="artista"
-                      name="artista"
-                      value={concierto.artista}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-3">
-                    <label htmlFor="cancionesIds" className="form-label">IDs de Canciones (separados por comas)</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="cancionesIds"
-                      name="cancionesIds"
-                      value={concierto.cancionesIds.join(', ') || ''}
-                      onChange={handleChange}
-                      placeholder="Ej: 1, 2, 3"
-                    />
-                  </div>
-
-                  <div className="d-grid">
-                    <button type="submit" className="btn btn-success">Actualizar Concierto</button>
-                  </div>
-
-                  {actualizado && (
-                    <div className="alert alert-success mt-3" role="alert">
-                      Concierto actualizado correctamente.
-                    </div>
-                  )}
-                </form>
-              )}
             </div>
           </div>
         </div>
