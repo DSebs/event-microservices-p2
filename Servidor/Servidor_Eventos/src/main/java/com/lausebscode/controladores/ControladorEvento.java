@@ -219,6 +219,7 @@ public class ControladorEvento {
             String fechaString = rootNode.get("fecha").asText();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
             LocalDateTime fecha = LocalDateTime.parse(fechaString, formatter);
+            System.out.println("Datos recibidos: " + cancionesIds);
 
             // Obtener las canciones a partir de los IDs
             if(servicioEvento.validarCanciones(cancionesIds, id) == true){
