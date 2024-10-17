@@ -98,6 +98,15 @@ public class ServicioEvento {
         return conciertoExistente;
     }
 
+    public void eliminarCancionDeConciertos(int cancionId) {
+        for (Evento evento : eventos) {
+            if (evento instanceof Concierto) {
+                Concierto concierto = (Concierto) evento;
+                concierto.getCanciones().removeIf(cancion -> cancion.getId() == cancionId);
+            }
+        }
+    }
+
     public Boolean validarCanciones(List<Integer> ids, int conciertoIdActual) {
         for (Evento eve : eventos) {
             Concierto concierto = (Concierto) eve;

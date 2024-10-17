@@ -3,6 +3,7 @@ package com.lausebscode.servicio;
 import com.lausebscode.modelo.Cancion;
 import com.lausebscode.modelo.Concierto;
 import com.lausebscode.modelo.Evento;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,6 +15,8 @@ public class ServicioCancion {
 
     private static ServicioCancion servicioCancion;
     private List<Cancion> canciones;
+    @Autowired
+    private ServicioEvento servicioEvento;
 
     private ServicioCancion(){
         canciones= new ArrayList<>();
@@ -55,10 +58,12 @@ public class ServicioCancion {
 
     public void eliminarCancion(Cancion cancion){
         if (cancion == null) {
-            throw new IllegalArgumentException("El cancion a eliminar no puede ser null");
+            throw new IllegalArgumentException("La canción a eliminar no puede ser null");
         }
-        if (!canciones.remove(cancion)) {
-            throw new IllegalArgumentException("No se encontró el cancion a eliminar");
+        if (canciones.remove(cancion)) {
+            servicioEvento.eliminarCancionDeConciertos(cancion.getId());
+        } else {
+            throw new IllegalArgumentException("No se encontró la canción a eliminar");
         }
     }
 

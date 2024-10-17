@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\actualizarcancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|f:\\uni\\dev empresariales\\cliente\\cliente_eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ED7216A4-E5CF-410E-B9C1-4360F8D55D67}|Cliente_Eventos\\Cliente_Eventos.csproj|solutionrelative:cliente_eventos\\cliente.vista\\agregarconcierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T05:06:04.805Z",
               "EditorCaption": ""
@@ -66,8 +66,7 @@
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs [Dise\u00F1o]",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarConcierto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:06:03.093Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-16T05:06:03.093Z"
             },
             {
               "$type": "Document",
@@ -78,8 +77,7 @@
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:05:23.62Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-16T05:05:23.62Z"
             },
             {
               "$type": "Document",
@@ -91,8 +89,7 @@
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowDMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T21:08:24.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T21:08:24.882Z"
             },
             {
               "$type": "Document",
@@ -103,8 +100,7 @@
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs [Dise\u00F1o]",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\AgregarConcierto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:45:16.007Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-14T20:45:16.007Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "ToolTip": "F:\\Uni\\Dev Empresariales\\Cliente\\Cliente_Eventos\\Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs [Dise\u00F1o]",
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\ActualizarCancion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:41:19.071Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-14T20:41:19.071Z"
             },
             {
               "$type": "Document",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "Cliente_Eventos\\Cliente.Vista\\FramePrincipal.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAEwFMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T22:59:27.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T22:59:27.321Z"
             }
           ]
         }

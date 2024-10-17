@@ -8,7 +8,7 @@ const AgregarConcierto = () => {
     precio: '',
     fecha: '',
     artista: '',
-    cancionesIds: []
+    cancionesIds: ''
   });
 
   const handleChange = (e) => {
@@ -16,14 +16,43 @@ const AgregarConcierto = () => {
     setConcierto(prev => ({ ...prev, [name]: value }));
   };
 
+  const handleCancionesIdsChange = (e) => {
+    const { value } = e.target;
+    setConcierto(prev => ({ ...prev, cancionesIds: value }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const fechaAjustada = concierto.fecha.includes(":") ? concierto.fecha + ":00" : concierto.fecha;
-    const conciertoAjustado = { ...concierto, fecha: fechaAjustada };
+    const tieneSegundos = concierto.fecha.split(":").length === 3;
+    const fechaAjustada = tieneSegundos ? concierto.fecha : concierto.fecha + ":00";
+    
+    // Convertir cancionesIds a array de números, permitiendo array vacío
+    const cancionesIdsArray = concierto.cancionesIds.trim() !== '' 
+      ? concierto.cancionesIds.split(',')
+          .map(id => id.trim())
+          .filter(id => id !== '')
+          .map(Number)
+          .filter(id => !isNaN(id))
+      : [];
+
+    const conciertoAjustado = { 
+      ...concierto, 
+      fecha: fechaAjustada,
+      cancionesIds: cancionesIdsArray
+    };
   
     try {
       await agregarConcierto(conciertoAjustado);
       alert('Concierto agregado exitosamente');
+      // Opcional: limpiar el formulario después de agregar exitosamente
+      setConcierto({
+        id: '',
+        nombre: '',
+        precio: '',
+        fecha: '',
+        artista: '',
+        cancionesIds: ''
+      });
     } catch (error) {
       alert('Error al agregar concierto: ' + error.message);
     }
@@ -97,7 +126,7 @@ const AgregarConcierto = () => {
                     className="form-control"
                     name="cancionesIds"
                     value={concierto.cancionesIds}
-                    onChange={(e) => setConcierto(prev => ({ ...prev, cancionesIds: e.target.value.split(',').map(Number) }))}
+                    onChange={handleCancionesIdsChange}
                     placeholder="IDs de canciones (separados por coma)"
                   />
                 </div>

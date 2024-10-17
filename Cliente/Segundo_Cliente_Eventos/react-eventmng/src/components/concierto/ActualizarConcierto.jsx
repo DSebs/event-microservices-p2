@@ -8,7 +8,7 @@ const ActualizarConcierto = () => {
     precio: '',
     fecha: '',
     artista: '',
-    cancionesIds: []
+    cancionesIds: ''
   });
 
   const buscarConcierto = async () => {
@@ -16,7 +16,7 @@ const ActualizarConcierto = () => {
       const conciertoEncontrado = await buscarConciertoPorId(id);
       setConcierto({
         ...conciertoEncontrado,
-        cancionesIds: conciertoEncontrado.cancionesIds || []
+        cancionesIds: conciertoEncontrado.cancionesIds.join(',') || ''
       });
     } catch (error) {
       console.error('Error al buscar el concierto:', error);
@@ -30,16 +30,29 @@ const ActualizarConcierto = () => {
   };
 
   const handleCancionesIdsChange = (e) => {
-    const idsString = e.target.value;
-    const idsArray = idsString.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id));
-    setConcierto(prev => ({ ...prev, cancionesIds: idsArray }));
+    const { value } = e.target;
+    setConcierto(prev => ({ ...prev, cancionesIds: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const tieneSegundos = concierto.fecha.split(":").length === 3;
     const fechaAjustada = tieneSegundos ? concierto.fecha : concierto.fecha + ":00";
-    const conciertoAjustado = { ...concierto, fecha: fechaAjustada };
+    
+    // Convertir cancionesIds a array de números, permitiendo array vacío
+    const cancionesIdsArray = concierto.cancionesIds.trim() !== '' 
+      ? concierto.cancionesIds.split(',')
+          .map(id => id.trim())
+          .filter(id => id !== '')
+          .map(Number)
+          .filter(id => !isNaN(id))
+      : [];
+
+    const conciertoAjustado = { 
+      ...concierto, 
+      fecha: fechaAjustada,
+      cancionesIds: cancionesIdsArray
+    };
 
     try {
       await actualizarConcierto(id, conciertoAjustado);
@@ -115,7 +128,7 @@ const ActualizarConcierto = () => {
                     type="text"
                     className="form-control"
                     name="cancionesIds"
-                    value={concierto.cancionesIds.join(',')}
+                    value={concierto.cancionesIds}
                     onChange={handleCancionesIdsChange}
                     placeholder="IDs de canciones (separados por coma)"
                   />
